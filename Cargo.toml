@@ -1,0 +1,33 @@
+[package]
+name = "playground-html-rust"
+version = "1.0.0"
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/yoshuawuyts/playground-html-rust"
+documentation = "https://docs.rs/playground-html-rust"
+description = "Trying out server HTML things in Rust."
+keywords = []
+categories = []
+authors = ["Yoshua Wuyts <yoshuawuyts@gmail.com>"]
+readme = "README.md"
+edition = "2018"
+
+[dependencies]
+failure = "0.1.3"
+exitfailure = "0.5.1"
+human-panic = "1.0.1"
+structopt = "0.2.13"
+log = "0.4.6"
+clap_flags = "0.3.0"
+typed-html = "0.1.0"
+http = "0.1.13"
+
+[dependencies.tide]
+git = "https://github.com/rust-net-web/tide"
+
+[dev-dependencies]
+
+[build-dependencies]
+mkdirp = "0.1.0"
+structopt = "0.2.13"
+clap_flags = "0.3.0"
+failure = "0.1.3"
